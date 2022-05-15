@@ -6,6 +6,13 @@ const theme = {
       dark: "#092385",
     },
   },
+  components: {
+    Select: {
+      baseStyle: {
+        ouline: "none",
+      },
+    },
+  },
 };
 
 export default extendTheme(theme);
