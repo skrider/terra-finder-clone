@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { Box, Input, Image } from "@chakra-ui/react";
+import { SearchIcon } from "@chakra-ui/icons";
 
 const Home: NextPage = () => {
   return (
@@ -29,17 +30,29 @@ const Home: NextPage = () => {
       </Box>
       <Box
         height="100%"
+        pb="6rem"
         display="flex"
         flexDir="column"
         alignItems="center"
         justifyContent="center"
       >
         <Image src="/logo.svg" height="2.25rem" />
-        <Input
-          variant="flushed"
-          color="white"
-          placeholder="Search Block / Tx / Account"
-        />
+        <Box mt="5.5rem" position="relative" left="0" top="0">
+          <Input
+            width="40rem"
+            fontSize="20px"
+            px="0.75rem"
+            variant="flushed"
+            color="white"
+            placeholder="Search Block / Tx / Account"
+          />
+          <SearchIcon
+            position="absolute"
+            color="white"
+            right="0.5rem"
+            height="100%"
+          />
+        </Box>
       </Box>
     </Box>
   );

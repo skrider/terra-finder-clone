@@ -6,10 +6,10 @@ const theme = {
       dark: "#092385",
     },
   },
-  components: {
-    Select: {
-      baseStyle: {
-        ouline: "none",
+  styles: {
+    global: {
+      "*": {
+        fontFamily: "Montserrat",
       },
     },
   },
